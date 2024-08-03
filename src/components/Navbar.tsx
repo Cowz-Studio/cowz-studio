@@ -1,6 +1,5 @@
 import { useState } from "react";
 import NavbarButtonIcons from "./NavbarButtonIcons";
-
 const Navbar = () => {
   const [value, setValue] = useState("Navbar");
   return (

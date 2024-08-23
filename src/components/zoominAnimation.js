@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "#hero",
       start: '2%',
-      end: '+=105%',
-      markers: true,
+      end: '+=130%',
+      //markers: true,
       scrub: true,
       toggleActions: "play reset reverse reverse",
     },
@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   tl.to("#hero h2", {
     opacity: 0,
-    duration: 0.1,
+    duration: 0.5,
   });
 });

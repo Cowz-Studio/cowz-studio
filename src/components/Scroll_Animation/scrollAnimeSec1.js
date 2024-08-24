@@ -9,14 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#hero",
       start: '2%',
       end: '+=130%',
-      //markers: true,
+      markers: true,
       scrub: true,
-      toggleActions: "play reset reverse reverse",
+      toggleActions: "play reset play reset",
+      onLeave: () => {
+        // Reset the zoom when the scroll passes the end point
+        gsap.to("#hero h2", { scale: 1, opacity: 0, duration: 0.5 });
+      },
     },
   });
 
   tl.to("#hero h2", {
     scale: 500,
+    pointerEvents: "none", 
     duration: 0.8,
   });
 
